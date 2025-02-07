@@ -17,15 +17,15 @@ export default async function Home() {
           <SignInButton />
           <SignUpButton />
         </SignedOut>
-        <SignedIn>
-          <UserButton />
-        </SignedIn>
       </div>
     );
 
   return (
-    <div className="flex items-center justify-center h-screen">
+    <div className="flex items-center justify-center h-screen gap-4">
       <h1> {user.firstName}!</h1>
+      <SignedIn>
+        <UserButton />
+      </SignedIn>
     </div>
   );
 }
